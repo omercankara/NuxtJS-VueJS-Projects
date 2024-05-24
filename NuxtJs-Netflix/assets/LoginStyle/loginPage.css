@@ -1,0 +1,2090 @@
+@media screen and (min-width: 1440px) {
+
+    /* Main Container */
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100vh;
+        background-image: url("../../static/main.jpg");
+        background-color: rgba(0, 0, 0, 0.3);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        margin-bottom: 0px;
+        background-size: cover;
+        background-size: 100% 100%;
+    }
+
+    /*Main menu container*/
+    .head {
+        width: 100%;
+        height: 9%;
+        padding: 30px 0px 0px 0px;
+    }
+
+    /*Logo container */
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 30%;
+        height: 100%;
+    }
+
+    /*Netflix logo image*/
+    .logo img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    /*Login main container*/
+    .loginContent {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* middle div inside loginContent div  */
+    .app-login {
+        /* min-width: 25%; */
+        max-width: 33%;
+        min-width: 30%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 0px 0px 0px 100x;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+
+    /* Main title content*/
+    .app-title {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Main title child div */
+    .title-content {
+        width: 70%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        height: 50%;
+    }
+
+    /*Title content child element*/
+    .title-content h1 {
+        padding: 0px 0px 0px 0px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    /*Main input content*/
+    .app-input {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*Main input child div*/
+    .app-input-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 70%;
+        height: 100%;
+    }
+
+    input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 40%;
+        background-color: rgba(65, 64, 64, 0.3);
+
+        padding: 0px 0px 0px 0px;
+        border-radius: 3px;
+        font-size: 14px;
+        padding: 0px 0px 0px 0px;
+        color: rgb(63, 63, 63);
+        border: 1px solid gray;
+    }
+
+    /*Main button contaişner */
+    .app-button {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 0px 10px 0px;
+    }
+
+    /*Main button child div*/
+    .app-button-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 70%;
+        height: 100%;
+    }
+
+    /*app-button-content div, child element */
+    .loginButton {
+        width: 100%;
+        height: 50%;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+    }
+
+    /*app-button-content div, child element */
+    .app-button p {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 0px 10px 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /*app-button-content div, child element */
+    .securityButton {
+        width: 100%;
+        height: 45%;
+        color: white;
+        font-weight: bold;
+        border: none;
+        background-color: rgba(95, 93, 93, 0.4);
+        border-radius: 5px;
+    }
+
+    /*Main footer div*/
+    .app-footer {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /*Password forgot text div*/
+    .app-password-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 20%;
+    }
+
+    /*app-pasword-title child element*/
+    .app-password-title h3 {
+        font-size: 15px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+    }
+
+    /*Main remember div */
+    .app-remember {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        height: 25%;
+    }
+
+    /*app-Remember div child container, check input div*/
+    .app-check-container {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    /*app-check-container child element*/
+    .checkİtem {
+        height: 50%;
+        width: 100%;
+        border: none;
+    }
+
+    /*app-Remember div child container, check input text div*/
+    .app-check-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+        font-size: 18px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /*app-footer div child container, register text div*/
+    .app-register-text {
+        width: 70%;
+        height: 25%;
+        color: white;
+        text-decoration: underline;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1439px) {
+
+    /* Main Container */
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100vh;
+        background-image: url("../../static/main.jpg");
+        background-color: rgba(0, 0, 0, 0.7);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        margin-bottom: 0px;
+        background-size: cover;
+        background-size: 100% 100%;
+    }
+
+    /*Main menu container*/
+    .head {
+        width: 100%;
+        height: 9%;
+        padding: 30px 0px 0px 0px;
+    }
+
+    /*Logo container */
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 23%;
+        height: 100%;
+    }
+
+    /*Netflix logo image*/
+    .logo img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    /*Login main container*/
+    .loginContent {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /* middle div inside loginContent div  */
+    .app-login {
+        /* min-width: 25%; */
+        /* max-width: 35%; */
+        min-width: 33%;
+        max-width: 33%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        /* background-color: red; */
+        padding: 0px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+
+    }
+
+    /* Main title content*/
+    .app-title {
+        width: 100%;
+        height: 15%;
+        /* background-color: yellow; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Main title child div */
+    .title-content {
+        width: 70%;
+        /* background-color: blue; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        height: 40%;
+    }
+
+    /* Title content child element */
+    .title-content h1 {
+        padding: 0px 0px 0px 0px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    /*Main input content*/
+    .app-input {
+        width: 100%;
+        height: 25%;
+        /* background-color: green; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*Main input child div*/
+    .app-input-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 70%;
+        height: 100%;
+    }
+
+    input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 40%;
+        background-color: rgba(65, 64, 64, 0.3);
+        border: 1px solid rgb(59, 59, 59);
+        padding: 0px 0px 0px 0px;
+        border-radius: 3px;
+        font-size: 14px;
+        padding: 0px 0px 0px 0px;
+        color: rgb(63, 63, 63);
+    }
+
+    /*Main button contaişner */
+    .app-button {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 0px 10px 0px;
+        /* background-color: blue; */
+    }
+
+    /*Main button child div*/
+    .app-button-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 70%;
+        height: 100%;
+
+    }
+
+    /*app-button-content div, child element */
+    .loginButton {
+        width: 100%;
+        height: 50%;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+    }
+
+    /*app-button-content div, child element */
+    .app-button p {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 0px 10px 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /*app-button-content div, child element */
+    .securityButton {
+        width: 100%;
+        height: 45%;
+        color: white;
+        font-weight: bold;
+        border: none;
+        background-color: rgba(95, 93, 93, 0.4);
+        border-radius: 5px;
+    }
+
+    /*Main footer div*/
+    .app-footer {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        /* background-color: gray; */
+       
+    }
+
+    /*Password forgot text div*/
+    .app-password-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+       
+        height: 20%;
+    }
+
+    /*app-pasword-title child element*/
+    .app-password-title h3 {
+        font-size: 15px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+    }
+
+    /*Main remember div */
+    .app-remember {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+       
+        height: 25%;
+    }
+
+    /*app-Remember div child container, check input div*/
+    .app-check-container {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+    }
+
+    /*app-check-container child element*/
+    .checkİtem {
+        height: 50%;
+        width: 50%;
+        border: none;
+        
+    }
+
+    /*app-Remember div child container, check input text div*/
+    .app-check-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+        font-size: 18px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /*app-footer div child container, register text div*/
+    .app-register-text {
+        width: 70%;
+        height: 25%;
+        
+        color: white;
+        text-decoration: underline;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .app-captcha{
+        width: 70%;
+        color: white;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) and (orientation: landscape) {
+
+    /* Main Container */
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100vh;
+        background-image: url("../../static/main.jpg");
+        background-color: rgba(0, 0, 0, 0.7);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        margin-bottom: 0px;
+        background-size: cover;
+        background-size: 100% 100%;
+    }
+
+    /*Main menu container*/
+    .head {
+        width: 100%;
+        height: 9%;
+        padding: 30px 0px 0px 0px;
+    }
+
+    /*Logo container */
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 23%;
+        height: 100%;
+    }
+
+    /*Netflix logo image*/
+    .logo img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    /*Login main container*/
+    .loginContent {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* middle div inside loginContent div  */
+    .app-login {
+        /* min-width: 35%; */
+        min-width: 35%;
+        max-width: 35%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 0px 0px 0px 100x;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+
+    /* Main title content*/
+    .app-title {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Main title child div */
+    .title-content {
+        width: 70%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        height: 50%;
+    }
+
+    /* Title content child element */
+    .title-content h1 {
+        padding: 0px 0px 0px 0px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    /*Main input content*/
+    .app-input {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*Main input child div*/
+    .app-input-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 70%;
+        height: 100%;
+    }
+
+    input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 40%;
+        background-color: rgba(65, 64, 64, 0.3);
+        border: 1px solid rgb(59, 59, 59);
+        padding: 0px 0px 0px 0px;
+        border-radius: 3px;
+        font-size: 14px;
+        padding: 0px 0px 0px 0px;
+        color: rgb(63, 63, 63);
+    }
+
+    /*Main button contaişner */
+    .app-button {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 0px 10px 0px;
+    }
+
+    /*Main button child div*/
+    .app-button-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 70%;
+        height: 100%;
+    }
+
+    /*app-button-content div, child element */
+    .loginButton {
+        width: 100%;
+        height: 50%;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+    }
+
+    /*app-button-content div, child element */
+    .app-button p {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 0px 10px 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /*app-button-content div, child element */
+    .securityButton {
+        width: 100%;
+        height: 45%;
+        color: white;
+        font-weight: bold;
+        border: none;
+        background-color: rgba(95, 93, 93, 0.4);
+        border-radius: 5px;
+    }
+
+    /*Main footer div*/
+    .app-footer {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /*Password forgot text div*/
+    .app-password-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 20%;
+    }
+
+    /*app-pasword-title child element*/
+    .app-password-title h3 {
+        font-size: 15px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+    }
+
+    /*Main remember div */
+    .app-remember {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        height: 25%;
+    }
+
+    /*app-Remember div child container, check input div*/
+    .app-check-container {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    /*app-check-container child element*/
+    .checkİtem {
+        height: 50%;
+        width: 100%;
+        border: none;
+    }
+
+    /*app-Remember div child container, check input text div*/
+    .app-check-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+        font-size: 18px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /*app-footer div child container, register text div*/
+    .app-register-text {
+        width: 70%;
+        height: 25%;
+        color: white;
+        text-decoration: underline;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* Main Container */
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100vh;
+        background-image: url("../../static/main.jpg");
+        background-color: rgba(0, 0, 0, 0.7);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        margin-bottom: 0px;
+        background-size: cover;
+        background-size: 100% 100%;
+    }
+
+    /*Main menu container*/
+    .head {
+        width: 100%;
+        height: 9%;
+        padding: 20px 0px 0px 0px;
+    }
+
+    /*Logo container */
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 20%;
+        height: 40%;
+    }
+
+    /*Netflix logo image*/
+    .logo img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    /*Login main container*/
+    .loginContent {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    /* middle div inside loginContent div  */
+    .app-login {
+        width: 65%;
+        height: 90%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 0px 0px 0px 100x;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    /* Main title content*/
+    .app-title {
+        width: 100%;
+        height: 15%;
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
+        /* background-color: red; */
+    }
+
+    /* Main title child div */
+    .title-content {
+        width: 70%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        height: 50%;
+    }
+
+    /* Title content child element */
+    .title-content h1 {
+        padding: 0px 0px 0px 0px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    /*Main input content*/
+    .app-input {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: blue; */
+    }
+
+    /*Main input child div*/
+    .app-input-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 70%;
+        height: 100%;
+    }
+
+    input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 35%;
+        background-color: rgba(65, 64, 64, 0.3);
+        border: 1px solid gray;
+        padding: 0px 0px 0px 0px;
+        border-radius: 3px;
+        font-size: 20px;
+        padding: 0px 0px 0px 0px;
+        color: rgb(63, 63, 63);
+    }
+
+    /*Main button contaişner */
+    .app-button {
+        width: 100%;
+        height: 18%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0px 0px 10px 0px;
+        /* background-color: yellow; */
+    }
+
+    /*Main button child div*/
+    .app-button-content {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+        width: 70%;
+        height: 100%;
+    }
+
+    /*app-button-content div, child element */
+    .loginButton {
+        width: 100%;
+        height: 50%;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+    }
+
+    /*app-button-content div, child element */
+    .app-button p {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 0px 10px 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /*app-button-content div, child element */
+    .securityButton {
+        width: 100%;
+        height: 45%;
+        color: white;
+        font-weight: bold;
+        border: none;
+        background-color: rgba(95, 93, 93, 0.4);
+        border-radius: 5px;
+    }
+
+    /*Main footer div*/
+    .app-footer {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        /* background-color: red; */
+    }
+
+    /*Password forgot text div*/
+    .app-password-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 20%;
+    }
+
+    /*app-pasword-title child element*/
+    .app-password-title h3 {
+        font-size: 15px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+    }
+
+    /*Main remember div */
+    .app-remember {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        height: 25%;
+    }
+
+    /*app-Remember div child container, check input div*/
+    .app-check-container {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    /*app-check-container child element*/
+    .checkİtem {
+        height: 50%;
+        width: 100%;
+        border: none;
+    }
+
+    /*app-Remember div child container, check input text div*/
+    .app-check-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+        font-size: 18px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /*app-footer div child container, register text div*/
+    .app-register-text {
+        width: 70%;
+        height: 25%;
+        color: white;
+        text-decoration: underline;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .app-captcha {
+        width: 70%;
+        /* background-color: red; */
+        color: white;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    /* Main Container */
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100vh;
+        background-image: url("../../static/main.jpg");
+        background-color: rgba(0, 0, 0, 0.7);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        margin-bottom: 0px;
+        background-size: cover;
+        background-size: 100% 100%;
+    }
+
+    /*Main menu container*/
+    .head {
+        width: 100%;
+        height: 9%;
+        padding: 20px 0px 0px 0px;
+    }
+
+    /*Logo container */
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 20%;
+        height: 40%;
+    }
+
+    /*Netflix logo image*/
+    .logo img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    /*Login main container*/
+    .loginContent {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    /* middle div inside loginContent div  */
+    .app-login {
+        width: 65%;
+        height: 90%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 0px 0px 0px 100x;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    /* Main title content*/
+    .app-title {
+        width: 100%;
+        height: 15%;
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
+        /* background-color: red; */
+    }
+
+    /* Main title child div */
+    .title-content {
+        width: 70%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        height: 50%;
+    }
+
+    /* Title content child element */
+    .title-content h1 {
+        padding: 0px 0px 0px 0px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    /*Main input content*/
+    .app-input {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: blue; */
+    }
+
+    /*Main input child div*/
+    .app-input-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 70%;
+        height: 100%;
+    }
+
+    input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 35%;
+        background-color: rgba(65, 64, 64, 0.3);
+        border: 1px solid gray;
+        padding: 0px 0px 0px 0px;
+        border-radius: 3px;
+        font-size: 20px;
+        padding: 0px 0px 0px 0px;
+        color: rgb(63, 63, 63);
+    }
+
+    /*Main button contaişner */
+    .app-button {
+        width: 100%;
+        height: 18%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0px 0px 10px 0px;
+        /* background-color: yellow; */
+    }
+
+    /*Main button child div*/
+    .app-button-content {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+        width: 70%;
+        height: 100%;
+    }
+
+    /*app-button-content div, child element */
+    .loginButton {
+        width: 100%;
+        height: 50%;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+    }
+
+    /*app-button-content div, child element */
+    .app-button p {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 0px 10px 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /*app-button-content div, child element */
+    .securityButton {
+        width: 100%;
+        height: 45%;
+        color: white;
+        font-weight: bold;
+        border: none;
+        background-color: rgba(95, 93, 93, 0.4);
+        border-radius: 5px;
+    }
+
+    /*Main footer div*/
+    .app-footer {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        /* background-color: red; */
+    }
+
+    /*Password forgot text div*/
+    .app-password-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 20%;
+    }
+
+    /*app-pasword-title child element*/
+    .app-password-title h3 {
+        font-size: 15px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+    }
+
+    /*Main remember div */
+    .app-remember {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        height: 25%;
+    }
+
+    /*app-Remember div child container, check input div*/
+    .app-check-container {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    /*app-check-container child element*/
+    .checkİtem {
+        height: 50%;
+        width: 100%;
+        border: none;
+    }
+
+    /*app-Remember div child container, check input text div*/
+    .app-check-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+        font-size: 18px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /*app-footer div child container, register text div*/
+    .app-register-text {
+        width: 70%;
+        height: 25%;
+        color: white;
+        text-decoration: underline;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .app-captcha {
+        width: 70%;
+        /* background-color: red; */
+        color: white;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    /* Main Container */
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100vh;
+        background-image: url("../../static/main.jpg");
+        background-color: rgba(0, 0, 0, 0.7);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        margin-bottom: 0px;
+        background-size: cover;
+        background-size: 100% 100%;
+    }
+
+    /*Main menu container*/
+    .head {
+        width: 100%;
+        height: 9%;
+        padding: 20px 0px 0px 0px;
+    }
+
+    /*Logo container */
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 20%;
+        height: 40%;
+    }
+
+    /*Netflix logo image*/
+    .logo img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    /*Login main container*/
+    .loginContent {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    /* middle div inside loginContent div  */
+    .app-login {
+        width: 65%;
+        height: 90%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 0px 0px 0px 100x;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    /* Main title content*/
+    .app-title {
+        width: 100%;
+        height: 15%;
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
+        /* background-color: red; */
+    }
+
+    /* Main title child div */
+    .title-content {
+        width: 70%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        height: 50%;
+    }
+
+    /* Title content child element */
+    .title-content h1 {
+        padding: 0px 0px 0px 0px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    /*Main input content*/
+    .app-input {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: blue; */
+    }
+
+    /*Main input child div*/
+    .app-input-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 70%;
+        height: 100%;
+    }
+
+    input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 35%;
+        background-color: rgba(65, 64, 64, 0.3);
+        border: 1px solid gray;
+        padding: 0px 0px 0px 0px;
+        border-radius: 3px;
+        font-size: 20px;
+        padding: 0px 0px 0px 0px;
+        color: rgb(63, 63, 63);
+    }
+
+    /*Main button contaişner */
+    .app-button {
+        width: 100%;
+        height: 18%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0px 0px 10px 0px;
+        /* background-color: yellow; */
+    }
+
+    /*Main button child div*/
+    .app-button-content {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+        width: 70%;
+        height: 100%;
+    }
+
+    /*app-button-content div, child element */
+    .loginButton {
+        width: 100%;
+        height: 50%;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+    }
+
+    /*app-button-content div, child element */
+    .app-button p {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 0px 10px 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /*app-button-content div, child element */
+    .securityButton {
+        width: 100%;
+        height: 45%;
+        color: white;
+        font-weight: bold;
+        border: none;
+        background-color: rgba(95, 93, 93, 0.4);
+        border-radius: 5px;
+    }
+
+    /*Main footer div*/
+    .app-footer {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        /* background-color: red; */
+    }
+
+    /*Password forgot text div*/
+    .app-password-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 20%;
+    }
+
+    /*app-pasword-title child element*/
+    .app-password-title h3 {
+        font-size: 15px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+    }
+
+    /*Main remember div */
+    .app-remember {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        height: 25%;
+    }
+
+    /*app-Remember div child container, check input div*/
+    .app-check-container {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    /*app-check-container child element*/
+    .checkİtem {
+        height: 50%;
+        width: 100%;
+        border: none;
+    }
+
+    /*app-Remember div child container, check input text div*/
+    .app-check-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+        font-size: 18px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /*app-footer div child container, register text div*/
+    .app-register-text {
+        width: 70%;
+        height: 25%;
+        color: white;
+        text-decoration: underline;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .app-captcha {
+        width: 70%;
+        /* background-color: red; */
+        color: white;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    /* Main Container */
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100vh;
+        background-image: url("../../static/main.jpg");
+        background-color: rgba(0, 0, 0, 0.7);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        margin-bottom: 0px;
+        background-size: cover;
+        background-size: 100% 100%;
+    }
+
+    /* Main menu container */
+    .head {
+        width: 100%;
+        height: 9%;
+        padding: 20px 0px 0px 0px;
+    }
+
+    /* Logo container */
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 35%;
+        background-color: red;
+        height: 40%;
+    }
+
+    /*Netflix logo image*/
+    .logo img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    /*Login main container*/
+    .loginContent {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    /* middle div inside loginContent div  */
+    .app-login {
+        width: 65%;
+        height: 90%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 0px 0px 0px 100x;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    /* Main title content*/
+    .app-title {
+        width: 100%;
+        height: 15%;
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
+        /* background-color: red; */
+    }
+
+    /* Main title child div */
+    .title-content {
+        width: 70%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        height: 50%;
+    }
+
+    /* Title content child element */
+    .title-content h1 {
+        padding: 0px 0px 0px 0px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    /*Main input content*/
+    .app-input {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: blue; */
+    }
+
+    /*Main input child div*/
+    .app-input-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 70%;
+        height: 100%;
+    }
+
+    input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 35%;
+        background-color: rgba(65, 64, 64, 0.3);
+        border: 1px solid gray;
+        padding: 0px 0px 0px 0px;
+        border-radius: 3px;
+        font-size: 20px;
+        padding: 0px 0px 0px 0px;
+        color: rgb(63, 63, 63);
+    }
+
+    /*Main button contaişner */
+    .app-button {
+        width: 100%;
+        height: 18%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0px 0px 10px 0px;
+        /* background-color: yellow; */
+    }
+
+    /*Main button child div*/
+    .app-button-content {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+        width: 70%;
+        height: 100%;
+    }
+
+    /*app-button-content div, child element */
+    .loginButton {
+        width: 100%;
+        height: 50%;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+    }
+
+    /*app-button-content div, child element */
+    .app-button p {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 0px 10px 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /*app-button-content div, child element */
+    .securityButton {
+        width: 100%;
+        height: 45%;
+        color: white;
+        font-weight: bold;
+        border: none;
+        background-color: rgba(95, 93, 93, 0.4);
+        border-radius: 5px;
+    }
+
+    /*Main footer div*/
+    .app-footer {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        /* background-color: red; */
+    }
+
+    /*Password forgot text div*/
+    .app-password-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 20%;
+    }
+
+    /*app-pasword-title child element*/
+    .app-password-title h3 {
+        font-size: 15px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+    }
+
+    /*Main remember div */
+    .app-remember {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        height: 25%;
+    }
+
+    /*app-Remember div child container, check input div*/
+    .app-check-container {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    /*app-check-container child element*/
+    .checkİtem {
+        height: 50%;
+        width: 100%;
+        border: none;
+    }
+
+    /*app-Remember div child container, check input text div*/
+    .app-check-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+        font-size: 18px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /*app-footer div child container, register text div*/
+    .app-register-text {
+        width: 70%;
+        height: 25%;
+        color: white;
+        text-decoration: underline;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .app-captcha {
+        width: 70%;
+        /* background-color: red; */
+        color: white;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    /* Main Container */
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+    }
+
+    /*Main menu container*/
+    .head {
+        width: 100%;
+        height: 9%;
+        padding: 20px 0px 0px 0px;
+    }
+
+    /*Logo container */
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 20%;
+        height: 40%;
+    }
+
+    /*Netflix logo image*/
+    .logo img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    /*Login main container*/
+    .loginContent {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    /* middle div inside loginContent div  */
+    .app-login {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 0px 0px 0px 100x;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    /* Main title content*/
+    .app-title {
+        width: 100%;
+        height: 15%;
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
+        /* background-color: red; */
+    }
+
+    /* Main title child div */
+    .title-content {
+        width: 90%;
+        height: 80%;
+        /* background-color: red; */
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+    }
+
+    /* Title content child element */
+    .title-content h1 {
+        padding: 0px 0px 0px 0px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    /*Main input content*/
+    .app-input {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: blue; */
+        /* background-color: blue; */
+    }
+
+    /*Main input child div*/
+    .app-input-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90%;
+        height: 100%;
+        /* background-color: red; */
+    }
+
+    input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 40%;
+        background-color: rgba(65, 64, 64, 0.3);
+        border: 1px solid gray;
+        padding: 0px 0px 0px 0px;
+        border-radius: 3px;
+        font-size: 20px;
+        padding: 0px 0px 0px 0px;
+        color: rgb(63, 63, 63);
+    }
+
+    /*Main button contaişner */
+    .app-button {
+        width: 100%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0px 0px 10px 0px;
+        /* background-color: blue; */
+        /* background-color: red; */
+        /* background-color: yellow; */
+    }
+
+    /*Main button child div*/
+    .app-button-content {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-around;
+        width: 90%;
+        height: 100%;
+    }
+
+    /*app-button-content div, child element */
+    .loginButton {
+        width: 100%;
+        height: 25%;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+    }
+
+    /*app-button-content div, child element */
+    .app-button p {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 0px 10px 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /*app-button-content div, child element */
+    .securityButton {
+        width: 100%;
+        height: 25%;
+        color: white;
+        font-weight: bold;
+        border: none;
+        background-color: rgba(95, 93, 93, 0.4);
+        border-radius: 5px;
+    }
+
+    /*Main footer div*/
+    .app-footer {
+        width: 100%;
+        height: 25%;
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        /* background-color: red; */
+    }
+
+    /*Password forgot text div*/
+    .app-password-title {
+        /* background-color: yellow; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 33.333%;
+    }
+
+    /*app-pasword-title child element*/
+    .app-password-title h3 {
+        font-size: 20px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+    }
+
+    /*Main remember div */
+    .app-remember {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        /* height: 35%; */
+        /* background-color: yellow; */
+    }
+
+    /*app-Remember div child container, check input div*/
+    .app-check-container {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    /*app-check-container child element*/
+    .checkİtem {
+        height: 50%;
+        width: 100%;
+        border: none;
+    }
+
+    /*app-Remember div child container, check input text div*/
+    .app-check-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+        font-size: 18px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /*app-footer div child container, register text div*/
+    .app-register-text {
+        width: 90%;
+        height: 33,333%;
+        /* background-color: gray; */
+        color: white;
+        text-decoration: underline;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+    }
+
+    .app-captcha {
+        /* background-color: blue; */
+        width: 90%;
+        height: 33,333%;
+        color: white;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}

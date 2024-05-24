@@ -1,0 +1,183 @@
+.buy-icon {
+        position: absolute;
+        left: 20px !important;
+        top: 0px;
+        background-color: gray;
+        border-radius: 1vh;
+}
+
+.plusicons {
+        font-size: 30px;
+        top: 0;
+        right: 10px;
+        position: absolute;
+        border: 1px solid gray;
+        border-radius: 10px;
+        color: #5B3DB9;
+}
+
+.banner {
+        background-image: url(../img/bannerbg.png);
+        background-color: #5B3DB9;
+}
+
+.price {
+        color: #5B3DB9;
+        font-weight: bold;
+}
+
+.title {
+        color: rgb(75, 74, 74);
+        font-weight: bold;
+}
+
+.middleText {
+        color: #5B3DB9;
+        font-weight: 500;
+}
+
+.middleContent {
+        color: gray;
+}
+
+.footerTitle {
+        color: #5B3DB9;
+}
+
+.responsiveİmg{
+        max-width: 80px !important;
+}
+
+
+@media screen and (max-width:430px) {
+        /* 430 PX DEN KÜÇÜK CİHAZLAR İÇİN UYGULA*/
+
+        .Product-container,
+        .product-row,
+        .product-content,
+        .product-sub-content,
+        .product-sub-main {
+                padding: 0px 5px 0px 0px !important;
+        }
+
+        .footer-container {
+                display: flex;
+                flex-direction: column;
+        }
+
+        .discover-content {
+                display: flex;
+                flex-direction: column !important;
+                justify-content: center !important;
+
+                align-items: center !important;
+        }
+
+        .text-panel {
+                display: flex !important;
+                flex-direction: column !important;
+        }
+
+        .banner {
+                padding: 20px !important;
+        }
+
+
+        .banner-content {
+                display: none !important;
+        }
+
+        .appMarketBanner {
+                display: flex;
+                flex-direction: column;
+                padding: 0px 100px 20px 100px !important;
+        }
+
+        .phoneBanner {
+                display: none !important;
+        }
+
+}
+
+
+@media screen and (min-width:500px) and (max-width:896px) {
+
+        /*500 Den büyük 896 den küçük // 500 896 arası cihazlar*/
+        .Product-container,
+        .product-row,
+        .product-content,
+        .product-sub-content,
+        .product-sub-main {
+                padding: 0px 10px 0px 10px !important;
+        }
+
+        .footer-container {
+                display: flex;
+                flex-direction: row !important;
+                justify-content: around !important;
+
+        }
+
+        .discover-content {
+                display: flex;
+                flex-direction: column !important;
+                justify-content: center !important;
+                align-items: center !important;
+        }
+
+        .text-panel {
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: center !important;
+                align-items: center !important;
+                
+        }
+
+        .banner {
+                padding: 20px !important;
+        }
+
+        .text-image {
+                padding: 5px !important;
+        }
+        .text-selector{
+                width: 100% !important ;
+        }
+
+        .big-banner {
+                padding: 0px !important;
+        }
+
+        .banner-Text {
+                padding: 0px !important;
+        }
+
+        .banner-content {
+                display: none !important;
+        }
+
+        .appMarketBanner {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                padding: 10px 100px 0px 0px !important;
+        }
+
+        .phoneBanner {
+                display: none !important;
+        }
+
+
+}
+
+@media screen and (min-width:1360px) and (max-width:1440px) {
+
+         .Product-container,
+        .product-row,
+        .product-content,
+        .product-sub-content,
+        .product-sub-main {
+                padding: 0px 25px 0px 25px !important;
+        }
+}

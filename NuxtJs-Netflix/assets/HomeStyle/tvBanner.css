@@ -1,0 +1,540 @@
+@media screen and (min-width: 1440px) {
+    .container {
+        height: 70vh;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 0px 0px 300px;
+        /* ÜST SAĞ ALT SOL */
+        width: 40% !important;
+        height: 50%;
+    }
+
+
+    .title-text {
+        margin-bottom: 30px;
+    }
+
+    .sub-title {
+        width: 75%;
+    }
+
+    h1 {
+        font-size: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        letter-spacing: 1px;
+    }
+
+    p {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 23px;
+        line-height: 34px;
+    }
+
+    /* üst sağ alt sol */
+    .svg-content {
+        padding: 0px 100px 0px 0px;
+        height: 100%;
+        /* width: 50% !important; */
+        width: 50%;
+        display: flex;
+        /* justify-content: center; */
+        justify-content: center;
+        align-items: center;
+        position: relative;
+       background-color: black;
+    }
+
+    .tv {
+        object-fit: contain;
+        min-height: 100%;
+        max-height: 65%;
+        /* min-width: 100%; */
+        width: 60%;
+        z-index: 99;
+    }
+
+    .gif {
+        object-fit: contain;
+        position: absolute;
+        min-height: 50%;
+        max-height: 100%;
+        max-width: 40%;
+        /* min-width: 45%; */
+        z-index: 1;
+    }
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px and 1439 px to higher resolution desktops
+*/
+
+@media screen and (min-width: 1281px) and (max-width: 1439px) {
+    .container {
+        height: 70vh;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 0px 0px 150px;
+        /* ÜST SAĞ ALT SOL */
+        width: 50% !important;
+        height: 50%;
+    }
+
+    .title-text {
+        margin-bottom: 30px;
+    }
+
+    .sub-title {
+        width: 85%;
+    }
+
+    h1 {
+        font-size: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        letter-spacing: 1px;
+    }
+
+    p {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 23px;
+        line-height: 34px;
+    }
+
+    /* üst sağ alt sol */
+    .svg-content {
+        padding: 0px 100px 0px 0px;
+        height: 100%;
+        width: 50% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+    }
+
+    .tv {
+        object-fit: cover;
+        min-height: 65%;
+        max-height: 100%;
+        max-width: 90%;
+        min-width: 90%;
+        z-index: 99;
+    }
+
+    .gif {
+        object-fit: contain;
+        position: absolute;
+        min-height: 50%;
+        max-height: 100%;
+
+        max-width: 65%;
+        min-width: 54%;
+        z-index: 1;
+    }
+
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) and (orientation: landscape) {
+    .container {
+        height: 70vh;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 0px 0px 50px;
+        /* ÜST SAĞ ALT SOL */
+        width: 50% !important;
+        height: 50%;
+    }
+
+    .title-text {
+        margin-bottom: 30px;
+    }
+
+    .sub-title {
+        width: 85%;
+    }
+
+    h1 {
+        font-size: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        letter-spacing: 1px;
+    }
+
+    p {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 23px;
+        line-height: 34px;
+    }
+
+    /* üst sağ alt sol */
+    .svg-content {
+        padding: 0px 0px 0px 0px;
+        height: 100%;
+        min-width: 45%;
+        max-width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .tv {
+        object-fit: cover;
+        min-height: 70%;
+        max-height: 100%;
+
+        max-width: 100%;
+        min-width: 100%;
+        z-index: 99;
+    }
+
+    .gif {
+        object-fit: contain;
+        position: absolute;
+        min-height: 50%;
+        max-height: 100%;
+        max-width: 75%;
+        min-width: 90%;
+        z-index: 1;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .text-content {
+        padding: 60px 0px 0px 50px;
+        width: 60%;
+        height: 25%;
+
+    }
+
+    .title-text {
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 35px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        letter-spacing: 1px;
+    }
+
+    p {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 23px;
+        line-height: 34px;
+    }
+
+    /* üst sağ alt sol */
+    .svg-content {
+        padding: 0px 0px 0px 0px;
+        height: 55%;
+        min-width: 70%;
+        max-width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .tv {
+        object-fit: cover;
+        min-height: 65%;
+        max-height: 100%;
+        max-width: 90%;
+        min-width: 90%;
+        z-index: 99;
+    }
+
+    .gif {
+        object-fit: contain;
+        position: absolute;
+        min-height: 95%;
+        max-height: 95%;
+        max-width: 68%;
+        min-width: 68%;
+        z-index: 1;
+    }
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .container {
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* padding: 0px; */
+    }
+
+    .text-content {
+        padding: 0px 0px 0px 0px;
+        width: 100%;
+        text-align: center;
+        height: 25%;
+    }
+
+    .title-text {
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 35px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        letter-spacing: 1px;
+    }
+
+    p {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 23px;
+        line-height: 34px;
+    }
+
+    /* üst sağ alt sol */
+    .svg-content {
+        padding: 0px 0px 0px 0px;
+        height: 55%;
+        width: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .tv {
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+        z-index: 99;
+    }
+
+    .gif {
+        object-fit: contain;
+        position: absolute;
+        min-height: 100%;
+        max-height: 100%;
+
+        max-width: 68%;
+        min-width: 68%;
+        z-index: 1;
+    }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        background-color: black;
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 0px 0px 0px;
+        width: 100%;
+        margin-bottom: 20px;
+        height: 30%;
+    }
+
+    .svg-content {
+        padding: 0px 0px 0px 0px;
+        /**ÜST SAĞ ALT SOL */
+        height: 100%;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+    }
+
+    .title-text {
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 35px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        letter-spacing: 1px;
+    }
+
+    p {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 23px;
+        line-height: 34px;
+        padding: 0px 0px 0px 60px;
+    }
+
+    .tv {
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+        z-index: 99;
+    }
+
+    .gif {
+        object-fit: contain;
+        position: absolute;
+        max-height: 100%;
+        min-height: 40%;
+        max-width: 80%;
+        min-width: 80%;
+        z-index: 1;
+    }
+
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .container {
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .title-text {
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 35px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    p {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 23px;
+        line-height: 34px;
+        text-align: center;
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+        height: 20%;
+    }
+
+    .svg-content {
+        /**ÜST SAĞ ALT SOL */
+        padding: 0px 0px 0px 0px;
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+    }
+
+    .tv {
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+        z-index: 99;
+    }
+
+    .gif {
+        object-fit: contain;
+        position: absolute;
+        max-height: 100%;
+        min-height: 40%;
+        max-width: 80%;
+        min-width: 80%;
+        z-index: 1;
+    }
+
+}

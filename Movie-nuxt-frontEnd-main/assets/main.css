@@ -1,0 +1,16 @@
+body{
+    cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+    .movie-image-container {
+        width: 150px !important;
+        height: 200px !important;
+        background-color: greenyellow;
+    }
+
+    .movie-image {
+        width: 150px;
+        height: 200px;
+        object-fit: cover;
+    }
+}

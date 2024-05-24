@@ -1,0 +1,29 @@
+
+                   <div class="col-md-4   position-absolute d-flex flex-column justify-content-start  px-5">
+                                  <div class="col-md-12">
+                                         <img class="img-fluid w-50" src="../img/logo.svg">
+                                  </div>
+                                   <div class="col-md-12 p-0 py-0  py-3 ">
+                                        <h1 class="mytext text-white">Dakikalar içinde kapınzıda</h1>
+                                   </div>
+                        </div>
+
+                        <div class="col-md-4 bg-dark  position-absolute d-flex flex-column justify-content-start  px-5" style="right:0">
+                                <div class="col-md-12">
+                                        <h4>Giriş Yap veya kayıt ol</h4>
+                                </div>
+                               <div class="col-md-12 justify-content-between d-flex">
+                                         <div class="col-md-5">
+                                        <select class="form-select" aria-label="Default select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                        </select>
+                                        
+                                </div>
+                                <div class="col-md-6">
+                                        <input type="text" class="form-control">
+                                </div>
+                               </div>
+                        </div>

@@ -1,0 +1,22 @@
+        .productİmg:hover .productTitle{
+               color:  #5B3DB9 !important;
+ 
+        }
+        .productTitle{
+                color:gray;
+                font-weight: bold;
+        }
+
+
+@media screen and (max-width:430px){
+        .product-Container{
+                padding: 0px !important;
+        }
+}
+
+
+@media screen and (min-width:500px) and (max-width:896px) {
+        .product-Container{
+                padding: 0px 0px 0px 0px !important;
+        }
+}

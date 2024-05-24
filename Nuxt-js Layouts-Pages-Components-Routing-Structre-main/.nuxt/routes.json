@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Admin",
+    "path": "/Admin",
+    "component": "C:\\\\Users\\\\Ömercan\\\\Desktop\\\\kandemir\\\\ders 2\\\\pages\\\\Admin\\\\index.vue",
+    "chunkName": "pages/Admin/index",
+    "_name": "_2e155c43"
+  },
+  {
+    "name": "Posts",
+    "path": "/Posts",
+    "component": "C:\\\\Users\\\\Ömercan\\\\Desktop\\\\kandemir\\\\ders 2\\\\pages\\\\Posts\\\\index.vue",
+    "chunkName": "pages/Posts/index",
+    "_name": "_1949ad82"
+  },
+  {
+    "name": "Admin-newPost",
+    "path": "/Admin/newPost",
+    "component": "C:\\\\Users\\\\Ömercan\\\\Desktop\\\\kandemir\\\\ders 2\\\\pages\\\\Admin\\\\newPost.vue",
+    "chunkName": "pages/Admin/newPost",
+    "_name": "_65179091"
+  },
+  {
+    "name": "Admin-postId",
+    "path": "/Admin/:postId",
+    "component": "C:\\\\Users\\\\Ömercan\\\\Desktop\\\\kandemir\\\\ders 2\\\\pages\\\\Admin\\\\_postId\\\\index.vue",
+    "chunkName": "pages/Admin/_postId/index",
+    "_name": "_fde0cc12"
+  },
+  {
+    "name": "Posts-postId",
+    "path": "/Posts/:postId",
+    "component": "C:\\\\Users\\\\Ömercan\\\\Desktop\\\\kandemir\\\\ders 2\\\\pages\\\\Posts\\\\_postId\\\\index.vue",
+    "chunkName": "pages/Posts/_postId/index",
+    "_name": "_504aaf0a"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\Ömercan\\\\Desktop\\\\kandemir\\\\ders 2\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_32f368fc"
+  }
+]

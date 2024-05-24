@@ -1,0 +1,599 @@
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        padding: 70px 0px 100px 0px;
+    }
+
+    .mobile-content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 50%;
+        padding: 0px 0px 0px 90px;
+        /* background-color: blue; */
+    }
+
+    .mobile-image {
+        width: 75%;
+        height: 100%;
+    }
+
+    .gif-card {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 35%;
+        height: 23%;
+        background-color: black;
+        border: 2px solid gray;
+        margin-bottom: 40px;
+        border-radius: 14px;
+        padding: 10px 10px 10px 15px;
+    }
+
+    .gif-card h5 {
+        margin-bottom: 5px;
+        color: white;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .gif-card p {
+        color: rgb(29, 141, 185);
+    }
+
+    .download-gif {
+        height: 50% !important;
+        width: 25% !important;
+    }
+
+    .gifimg {
+        object-fit: cover;
+        width: 20%;
+        height: 100%;
+        background-color: yellow;
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        /* background-color: blue; */
+        /* background-color: yellow; */
+    }
+
+    .title-content {
+        width: 70%;
+        /* background-color: red; */
+        margin-bottom: 20px;
+    }
+
+    .sub-content {
+        width: 85%;
+
+    }
+
+    .sub-content p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.4em;
+        color: white;
+    }
+
+    .text-content h1 {
+        color: white;
+        font-size: 58px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px and 1439 px to higher resolution desktops
+*/
+
+@media screen and (min-width: 1281px) and (max-width: 1439px) {
+    .container {
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        padding: 70px 0px 100px 0px;
+    }
+
+    .mobile-content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 50%;
+        padding: 0px 0px 0px 90px;
+        /* background-color: blue; */
+    }
+
+    .mobile-image {
+        width: 75%;
+        height: 100%;
+    }
+
+    .gif-card {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 35%;
+        height: 23%;
+        background-color: black;
+        border: 2px solid gray;
+        margin-bottom: 40px;
+        border-radius: 14px;
+        padding: 10px 10px 10px 15px;
+    }
+
+    .gif-card h5 {
+        margin-bottom: 5px;
+        color: white;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .gif-card p {
+        color: rgb(29, 141, 185);
+    }
+
+    .download-gif {
+        height: 50% !important;
+        width: 25% !important;
+    }
+
+    .gifimg {
+        object-fit: cover;
+        width: 20%;
+        height: 100%;
+        background-color: yellow;
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        /* background-color: yellow; */
+    }
+
+    .title-content {
+        width: 84%;
+        /* background-color: red; */
+        margin-bottom: 20px;
+    }
+
+    .sub-content {
+        width: 85%;
+
+    }
+
+    .sub-content p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.4em;
+        color: white;
+    }
+
+    .text-content h1 {
+        color: white;
+        font-size: 58px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) and (orientation: landscape) {
+    .container {
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        padding: 70px 0px 100px 0px;
+    }
+
+    .mobile-content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 50%;
+        padding: 0px 0px 0px 90px;
+        /* background-color: blue; */
+    }
+
+    .mobile-image {
+        width: 75%;
+        height: 100%;
+    }
+
+    .gif-card {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 35%;
+        height: 23%;
+        background-color: black;
+        border: 2px solid gray;
+        margin-bottom: 40px;
+        border-radius: 14px;
+        padding: 10px 10px 10px 15px;
+    }
+
+    .gif-card h5 {
+        margin-bottom: 5px;
+        color: white;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .gif-card p {
+        color: rgb(29, 141, 185);
+    }
+
+    .download-gif {
+        height: 50% !important;
+        width: 25% !important;
+    }
+
+    .gifimg {
+        object-fit: cover;
+        width: 20%;
+        height: 100%;
+        background-color: yellow;
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        /* background-color: yellow; */
+    }
+
+    .title-content {
+        width: 84%;
+        /* background-color: red; */
+        margin-bottom: 20px;
+    }
+
+    .sub-content {
+        width: 85%;
+
+    }
+
+    .sub-content p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.4em;
+        color: white;
+    }
+
+    .text-content h1 {
+        color: white;
+        font-size: 58px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 70px 0px 100px 0px;
+    }
+
+    .mobile-content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+        background-color: black;
+    }
+
+    .mobile-image {
+        width: 85%;
+        height: 100%;
+    }
+
+    .gif-card {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+        height: 20%;
+        background-color: black;
+        border: 2px solid gray;
+        margin-bottom: 40px;
+        border-radius: 14px;
+        padding: 10px 10px 10px 15px;
+    }
+
+    .gif-card h5 {
+        margin-bottom: 5px;
+        color: white;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .gif-card p {
+        color: rgb(29, 141, 185);
+    }
+
+    .download-gif {
+        height: 50% !important;
+        width: 25% !important;
+        object-fit: cover;
+    }
+
+    .gifimg {
+        object-fit: cover;
+        width: 20%;
+        height: 100%;
+        background-color: yellow;
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+
+    .sub-content {
+        width: 85%;
+    }
+
+    .sub-content p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.4em;
+        color: white;
+    }
+
+    .text-content h1 {
+        color: white;
+        font-size: 58px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) 
+{
+
+}
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) 
+{
+    .container {
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 70px 0px 100px 0px;
+    }
+
+    .mobile-content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+        background-color: black;
+    }
+
+    .mobile-image {
+        width: 85%;
+        height: 100%;
+    }
+
+    .gif-card {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+        height: 20%;
+        background-color: black;
+        border: 2px solid gray;
+        margin-bottom: 40px;
+        border-radius: 14px;
+        padding: 10px 10px 10px 15px;
+    }
+
+    .gif-card h5 {
+        margin-bottom: 5px;
+        color: white;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .gif-card p {
+        color: rgb(29, 141, 185);
+    }
+
+    .download-gif {
+        height: 50% !important;
+        width: 25% !important;
+        object-fit: cover;
+    }
+
+    .gifimg {
+        object-fit: cover;
+        width: 20%;
+        height: 100%;
+        background-color: yellow;
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+
+    .sub-content {
+        width: 85%;
+    }
+
+    .sub-content p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.4em;
+        color: white;
+    }
+
+    .text-content h1 {
+        color: white;
+        font-size: 58px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .container {
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 70px 0px 100px 0px;
+    }
+
+    .mobile-content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+        background-color: black;
+    }
+
+    .mobile-image {
+        width: 85%;
+        height: 100%;
+    }
+
+    .gif-card {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+        height: 20%;
+        background-color: black;
+        border: 2px solid gray;
+        margin-bottom: 40px;
+        border-radius: 14px;
+        padding: 10px 10px 10px 15px;
+    }
+
+    .gif-card h5 {
+        margin-bottom: 5px;
+        color: white;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .gif-card p {
+        color: rgb(29, 141, 185);
+    }
+
+    .download-gif {
+        height: 50% !important;
+        width: 25% !important;
+        object-fit: cover;
+    }
+
+    .gifimg {
+        object-fit: cover;
+        width: 20%;
+        height: 100%;
+        background-color: yellow;
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .sub-content {
+        width: 85%;
+    }
+
+    .sub-content p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        color: white;
+    }
+
+    .text-content h1 {
+        color: white;
+        font-size: 25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
