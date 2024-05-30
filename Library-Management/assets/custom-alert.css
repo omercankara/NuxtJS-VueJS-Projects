@@ -1,0 +1,11 @@
+.custom-swal-height .swal2-popup {
+    height: 400px !important;
+    /* Burada istediğin yüksekliği ayarlayabilirsin */
+    width: 500px;
+}
+
+.custom-swal-text {
+    font-size: 40px !important;
+    color: red;
+    /* Metin boyutunu istediğin gibi ayarla */
+}
