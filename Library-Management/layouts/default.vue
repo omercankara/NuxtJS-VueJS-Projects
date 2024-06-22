@@ -1,38 +1,22 @@
 <template>
-    <div class="app-container">
-        <div class="head">
-            <Header />
-        </div>
-        <div class="main">
-            <nuxt />
-        </div>
+    <div class="main">
+        <Header style="margin-bottom: 1vh;" />
+        <nuxt />
     </div>
 </template>
 
-
-<style  lang="scss">
-    .app-container{
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: row;
-    }
-    .head{
-        width: 10%;
-        background-color: red;
-    }
-    .main{
-        width: 90%;
-    }
-</style>
-
-
-
 <script>
-import Header from "../components/Menu/Header.vue"
+import Header from "../components/Header"
 export default {
     components: {
         Header
     }
 }
 </script>
+
+<style scoped lang="scss">
+.main {
+    display: flex;
+    flex-direction: column;
+}
+</style>

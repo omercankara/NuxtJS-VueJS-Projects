@@ -1,0 +1,304 @@
+<template>
+    <div class="app-form">
+        <!--İNFO AND CREATE BUTTON-->
+        <div class="app-info">
+            <div class="app-button">
+                <button @click="showCreateModal = true" class="btn btn-success">Yeni Kayıt +</button>
+            </div>
+            <div class="app-book-size">
+                <p>Toplam Kitap</p>
+                <p class="number">{{ bookList.length }}</p>
+            </div>
+        </div>
+
+        <!-- CREATE MODAL-->
+        <b-modal size="lg" v-model="showCreateModal" id="modal-1" @hide="closeModal" hide-footer title="Yeni Kayıt">
+            <div class="app-container">
+                <div class="formContent">
+                    <div class="app-right">
+                        <div class="input-group">
+                            <label for="">Başlık</label>
+                            <input v-model="addObject.Baslik" placeholder="Başlık Giriniz..." type="text"
+                                class="form-control">
+                        </div>
+                        <div class="input-group">
+                            <label for="">Yazar</label>
+                            <input v-model="addObject.Yazar" placeholder="Yazar Giriniz..." type="text"
+                                class="form-control">
+                        </div>
+                        <div class="input-group">
+                            <label for="">Yayin evi</label>
+                            <input v-model="addObject.Yayinevi" placeholder="Yayin evi Giriniz..." type="text"
+                                class="form-control">
+                        </div>
+                    </div>
+                    <div class="app-left">
+                        <div class="input-group">
+                            <label for="">Kategori</label>
+                            <input v-model="addObject.Kategori" placeholder="Kategori giriniz..." type="text"
+                                class="form-control">
+                        </div>
+                        <div class="input-group">
+                            <label for="">Dil</label>
+                            <input v-model="addObject.Dil" placeholder="Dil giriniz..." type="text"
+                                class="form-control">
+                        </div>
+                        <div class="input-group">
+                            <label for="">Sayfa</label>
+                            <input v-model="addObject.Sayfa" placeholder="Sayfa sayısı giriniz..." type="text"
+                                class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="app-image-content">
+                    <button @click="$refs.files.click()">
+                        <img style="max-height:25px !important;" src="../../static/img.png" alt="">
+                        <h7 class="text-center">Görsel Yükleyiniz.</h7>
+                    </button>
+                    <input type="file" accept="jpeg,png,jpg" class="form-control" ref="files" @change="handleFileChange"
+                        style="display: none !important;">
+                </div>
+                <hr>
+                <div class="app-button">
+                    <button @click="createData()" class="btn btn-success">Tamamla</button>
+                    <button class="btn btn-danger">Vazgeç</button>
+                </div>
+            </div>
+        </b-modal>
+
+
+        <!--UPDATE MODAL-->
+        <b-modal size="lg" v-model="showUpdateModal" id="modal-1" @hide="closeModal" hide-footer title="Yeni Kayıt">
+            <div class="app-container">
+                <div class="formContent">
+                    <div class="app-right">
+                        <div class="input-group">
+                            <label for="">Başlık</label>
+                            <input v-model="updateObject.Baslik" placeholder="Başlık Giriniz..." type="text"
+                                class="form-control">
+                        </div>
+                        <div class="input-group">
+                            <label for="">Yazar</label>
+                            <input v-model="updateObject.Yazar" placeholder="Yazar Giriniz..." type="text"
+                                class="form-control">
+                        </div>
+                        <div class="input-group">
+                            <label for="">Yayin evi</label>
+                            <input v-model="updateObject.Yayinevi" placeholder="Yayin evi Giriniz..." type="text"
+                                class="form-control">
+                        </div>
+                    </div>
+                    <div class="app-left">
+                        <div class="input-group">
+                            <label for="">Kategori</label>
+                            <input v-model="updateObject.Kategori" placeholder="Kategori giriniz..." type="text"
+                                class="form-control">
+                        </div>
+                        <div class="input-group">
+                            <label for="">Dil</label>
+                            <input v-model="updateObject.Dil" placeholder="Dil giriniz..." type="text"
+                                class="form-control">
+                        </div>
+                        <div class="input-group">
+                            <label for="">Sayfa</label>
+                            <input v-model="updateObject.Sayfa" placeholder="Sayfa sayısı giriniz..." type="text"
+                                class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="app-image-content">
+                    <button @click="$refs.files.click()">
+                        <img style="max-height:25px !important;" src="../../static/img.png" alt="">
+                        <h7 class="text-center">Görsel Yükleyiniz.</h7>
+                    </button>
+                    <input type="file" accept="jpeg,png,jpg" class="form-control" ref="files" @change="handleFileChange"
+                        style="display: none !important;">
+                </div>
+                <hr>
+                <div class="app-button">
+                    <button @click="updatePost()" class="btn btn-success">Tamamla</button>
+                    <button class="btn btn-danger">Vazgeç</button>
+                </div>
+            </div>
+        </b-modal>
+
+        <!-- SEARCH İNPUT-->
+        <div class="app-search">
+            <input v-model="searchTerm" placeholder="Arama..." type="text">
+            <i class="bx bx-search"></i>
+        </div>
+
+        <AppTable @modalVisible="modalVisible" @updateData="updateData" :bookList="filtered" />
+    </div>
+</template>
+
+<script>
+import { BModal, VBModal, BButton } from 'bootstrap-vue'
+import AppTable from "../../components/appTable"
+
+export default {
+    head() {
+        return {
+            link: [
+                {
+                    rel: 'stylesheet',
+                    href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'
+                },
+                {
+                    rel: 'stylesheet',
+                    href: 'https://cdn.jsdelivr.net/npm/bootstrap-vue@2.21.2/dist/bootstrap-vue.css'
+                }
+            ],
+            script: [
+                {
+                    src: 'https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js',
+                    type: 'text/javascript'
+                }
+            ]
+        }
+    },
+    directives: {
+        'b-modal': VBModal
+    },
+    components: {
+        BModal,
+        BButton,
+        AppTable
+    },
+    data() {
+        return {
+            showCreateModal: false,
+            showUpdateModal: false,
+            searchTerm: '',
+            filtered: [],
+            imageUrl: '',
+            bookList: this.$store.getters.getBookList,
+            addObject: {
+                Baslik: '',
+                Yazar: '',
+                Yayinevi: '',
+                Kategori: '',
+                Dil: '',
+                Sayfa: '',
+                image: ''
+            },
+            updateObject: {},
+            Resimler: {
+                files: []
+            },
+        }
+    },
+    watch: {
+        searchTerm: {
+            handler(newSearchTerm) {
+                this.filtered = newSearchTerm === '' ? this.bookList : this.bookList.filter(item => item.Baslik.toLowerCase().includes(newSearchTerm.toLowerCase()));
+            },
+            immediate: true
+        }
+    },
+    methods: {
+        closeModal() {
+            this.showModal = false;
+        },
+        handleFileChange(e) {
+            const files = this.$refs.files.files;
+            this.Resimler.files = [...this.Resimler.files, ...files];
+            console.log(this.Resimler.files)
+
+            /*DEGİŞEN GÖRSELİ UI DA ANLIK GÜNCELLE*/
+            const file = e.target.files[0];
+            this.file = file;
+            const reader = new FileReader();
+            reader.onload = e => {
+                this.imageUrl = e.target.result;
+                // console.log(e.target.result)
+            };
+            reader.readAsDataURL(file);
+
+        },
+        async createData() {
+            if (!this.addObject.Baslik || !this.addObject.Yazar || !this.addObject.Yayinevi || !this.addObject.Kategori || !this.addObject.Dil || !this.addObject.Sayfa) {
+                this.$swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Kayıt İşlemi Tamamlanamadı. Lütfen tüm alanları doldurduğunuzdan emin olunuz",
+                    customClass: {
+                        container: 'custom-swal-height',
+                        title: 'custom-swal-text',
+                    },
+                    confirmButtonText: "Tamam",
+                });
+            } else {
+                const formData = new FormData();
+                formData.append('Baslik', this.addObject.Baslik);
+                formData.append('Yazar', this.addObject.Yazar);
+                formData.append('Yayinevi', this.addObject.Yayinevi);
+                formData.append('Kategori', this.addObject.Kategori);
+                formData.append('Dil', this.addObject.Dil);
+                formData.append('Sayfa', this.addObject.Sayfa);
+                if (this.Resimler.files.length > 0) {
+                    //Önce form verisini gönder, sonra UI da anlık göstermek için base64 url gönnder
+                    formData.append('image', this.Resimler.files[0]);
+                    formData.append('image', this.imageUrl);
+                    console.log(this.addObject.image)
+                }
+
+                this.$toast.success('Kayıt İşlemi Tamamlandı!')
+                this.$store.dispatch('createBook', formData)
+                this.showModal = false
+
+                const formDataObject = {};
+                for (const [key, value] of formData.entries()) {
+                    formDataObject[key] = value;
+                }
+                this.$store.commit('set_post_Data', formDataObject)
+            }
+        },
+
+        async updatePost() {
+            const formData = new FormData();
+            formData.append('id', this.updateObject.id);
+            formData.append('Baslik', this.updateObject.Baslik);
+            formData.append('Yazar', this.updateObject.Yazar);
+            formData.append('Yayinevi', this.updateObject.Yayinevi);
+            formData.append('Kategori', this.updateObject.Kategori);
+            formData.append('Dil', this.updateObject.Dil);
+            formData.append('Sayfa', this.updateObject.Sayfa);
+            formData.append('image', this.Resimler.files[0]);
+            // if (this.Resimler.files.length > 0) {
+            //     //Önce form verisini gönder, sonra UI da anlık göstermek için base64 url gönnder
+            //     formData.append('image', this.Resimler.files[0]);
+            //     console.log(this.Resimler.files[0]);
+            //     // formData.append('image', this.imageUrl);
+            //     // console.log(this.addObject.image)
+            // }
+
+            this.$toast.success('Kayıt İşlemi Tamamlandı!')
+            this.$store.dispatch('editBook', formData)
+            this.showModal = false
+
+            // const formDataObject = {};
+            // for (const [key, value] of formData.entries()) {
+            //     formDataObject[key] = value;
+            // }
+            // this.$store.commit('set_post_Data', formDataObject)
+        },
+
+        updateData(e) {
+            this.updateObject = e
+            console.log(e)
+        },
+        modalVisible(e) {
+            this.showUpdateModal = e
+        }
+    },
+
+    async fetch({ store }) {
+        await store.dispatch('bookList');
+    }
+}
+</script>
+
+<style lang="scss" scoped>
+@import url("../../assets/book.scss");
+</style>
